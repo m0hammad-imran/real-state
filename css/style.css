@@ -1,0 +1,976 @@
+/*
+================
+author info
+=================
+
+Name: muhammad imran;
+Email: muhammadimu19@gmail.com;
+*/
+
+/*
+===============
+index
+===============
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+
+
+*/
+
+
+/*
+========================
+global css
+=========================
+color-code:#87c232;
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+body{
+
+font-family: 'Poppins', sans-serif;
+/*font-family: 'Lora', serif;*/
+
+}
+
+p{
+
+  margin-bottom: 5%;
+ font-family: 'Lora', serif;
+ font-size: 16px;
+ font-weight: 500;
+ line-height: 22px;
+}
+
+
+
+
+
+
+/*
+===========
+navbar-css
+==============
+
+*/
+
+li.nav-item {
+    padding-left: 30px;
+
+}
+
+.navbar-light .navbar-brand {
+    color: #161616;
+    text-align: center;
+    line-height: 22px;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+.navbar-light .navbar-brand span {
+    font-size: 15px;
+    color: #87c232;
+    text-transform: lowercase;
+    letter-spacing: 0;
+    text-align: left;
+    display: block;
+   font-family: 'Lora', serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #161616;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 400;
+}
+
+
+li.nav-item {
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+
+
+
+.stock li a {
+
+	position: relative;
+	color: #fff;
+}
+
+
+.stock li a:before{
+
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-color: #87c232;
+	border-style: solid;
+	border-width: 0;
+	opacity: 0;
+	transition: all ease 1.5s;
+	overflow: hidden;
+}
+
+
+.stock li a:after{
+
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-color: #87c232;
+	border-style: solid;
+	border-width: 0;
+	opacity: 0;
+	transition: all ease 1.5s;
+	overflow: hidden;
+}
+.stock li a:before{
+    	transition: all ease 1.5s;
+	left: 0;
+	bottom: 0;
+	border-bottom-width: 3px;
+	border-left-width: 3px;
+	opacity: 0;
+	
+}
+
+.stock li a:after{
+	transition: all ease 1.5s;
+	top: 0;
+	right: 0;
+	border-top-width: 3px;
+	border-right-width: 3px;
+	opacity: 0;
+	
+}
+
+
+.stock li a:hover::before{
+transition: all ease 1.5s;
+	opacity: 1;
+	
+}
+
+.stock li a:hover::after{
+transition: all ease 1.5s;
+	opacity: 1;
+	
+}
+
+
+
+/*
+=========
+sloider
+==========
+*/
+
+.carousel-item{
+  position: relative;
+  height: 600px;
+
+}
+
+.carousel-inner{
+  height: 600px;
+}
+
+.carousel-item bg-img{
+  height: 500px;
+}
+
+
+.carousel-caption{
+  position: absolute;
+    top: 40%;
+}
+
+.text h1{
+font-size: 50px;
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 2px;
+padding-bottom: 2%;
+
+
+}
+
+.text h1 span{
+
+  color: #87c232; 
+}
+
+
+.text p{
+ font-family: 'Lora', serif;
+ font-size: 16px;
+ font-weight: 500;
+ padding-bottom: 5%;
+
+
+}
+
+.button .btn{
+
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #87c232;
+  color: #fff;
+  background-color: transparent;
+  transition: all ease 1.5s;
+}
+
+.button .btn:hover{
+
+  transition: all ease 1.5s;
+  background-color: #87c232;
+
+}
+
+/*
+===================
+about us css
+===================
+*/
+
+.about{
+  padding-bottom: 5%;
+}
+
+.about-img{
+  padding-bottom: 2%;
+}
+
+.about-head{
+    color: #1d1d1d;
+    font-size: 50px;
+    font-weight: 300;
+    border: 2px solid #87c232;
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+
+    margin-top: 5%;
+    
+}
+
+.about-head p{
+margin-bottom: 5%;
+ font-family: 'Lora', serif;
+ font-size: 16px;
+ font-weight: 500;
+ line-height: 22px;
+
+
+}
+
+.about-head span{
+
+    background: #fff;
+    margin-right: -80px;
+
+}
+
+
+.about-history h3{
+    color: #87c232;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+
+.about-history p{
+ font-family: 'Lora', serif;
+ font-size: 16px;
+ font-weight: 500;
+ line-height: 22px;
+
+
+}
+
+.about-icon {
+
+  color: #87c232;
+}
+
+.icon-detail h4{
+  color: #1d1d1d;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 20px;
+
+}
+
+.icon-detail h6{
+ font-family: 'Lora', serif;
+ font-size: 16px;
+ font-weight: 500;
+ line-height: 22px;
+
+
+}
+
+/*
+====================
+service section css
+=====================
+*/
+
+.service{
+
+  padding-bottom: 5%;
+}
+
+.service-box{
+
+ 
+border: 1px solid #87c232;    
+margin-bottom: 10%;
+    padding-top: 30px;
+    padding-left: 20px;
+    transition: all ease 1.5s;
+
+}
+
+.service-box:hover{
+background-color:  #87c232;
+transition: all ease 1.5s;
+
+}
+
+.service-box:hover .service-icon{
+  color: #fff;
+  border: 2px dashed #fff;
+  transition: all ease 1.5s;
+
+}
+
+
+.service-box:hover .icon-detail p{
+
+  color: #fff;
+  transition: all ease 1.5s;
+}
+
+.service-box:hover .icon-detail h4{
+
+  color: #fff;
+  transition: all ease 1.5s;
+}
+
+.service-icon{
+transition: all ease 1.5s;
+ border: 2px dashed #1d1d1d;
+    padding: 21px;
+    font-size: 20px;
+    border-radius: 100%;
+    color: #87c232;
+    width: 80px;
+    height: 88px;
+   
+}
+
+.icon-detail h4{
+transition: all ease 1.5s;
+  color: #1d1d1d;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 20px;
+
+}
+
+.icon-detail p{
+ font-family: 'Lora', serif;
+ font-size: 16px;
+ font-weight: 500;
+ line-height: 22px;
+ transition: all ease 1.5s;
+
+}
+
+
+
+/*
+=================
+project css
+==================
+*/
+
+.project-box{
+
+  background: url(../img/bgg.jpeg) no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+.project-detail{
+margin-top: 20px;
+  background-color: #f1f1f1a1;
+  padding: 10px;
+  border: 1px solid #87c232;
+}
+
+
+.project-detail ul {
+ 
+  list-style: none;
+}
+
+
+.project-detail ul li{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.project-detail ul li span{
+ font-family: 'Lora', serif;
+ font-size: 16px;
+ font-weight: 600;
+ line-height: 22px;
+ margin-top: 20px;
+
+
+}
+
+
+.project-demo{
+
+  margin-top: 7%;
+}
+
+.project-detail ul li i{
+ 
+  font-size: 22px;
+}
+
+.project-img{
+
+    filter: grayscale(100%);
+    transition: all 0.5s;
+
+}
+
+
+.project-img:hover{
+filter: grayscale(0%);
+transition: all 0.5s;
+}
+
+
+
+/*
+====================
+blog section css
+==================
+*/
+
+.blog{
+
+  padding-bottom: 5%;
+}
+
+.blog-box{
+
+  background-color: #f1f1f1;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #87c232;
+  transition: all ease .5s;
+  filter: grayscale(100%);
+  margin-bottom: 10%;
+}
+
+
+.blog-box:hover{
+filter: grayscale(0%);
+transition: all ease .5s;
+
+}
+
+.blog-box:hover .review span{
+transition: all ease .5s;
+color: #87c232;
+}
+
+.blog-box:hover .blog-talk span{
+color: #87c232;
+transition: all ease .5s;
+}
+
+
+.blog-box:hover .blog-talk span{
+color: #87c232;
+transition: all ease .5s;
+
+}
+
+.blog-box:hover .blog-talk a{
+color: #87c232;
+transition: all ease .5s;
+
+}
+
+.blog-box:hover .review a{
+color: #87c232;
+transition: all ease .5s;
+
+}
+
+.blog-img img{
+
+  display: block;
+  margin: 0 auto;
+}
+
+.blog-talk a{
+  text-decoration: none;
+  float: right;
+  color: #161616;
+  padding-right: 10%;
+  padding-top: 4%;
+  transition: all ease .5s;
+  
+}
+
+.blog-talk span{
+
+  padding-left: 10%;
+  color: #161616;
+  padding-top: 4%;
+  transition: all ease .5s;
+}
+
+.blog-par h4{
+ color: #1d1d1d;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding-top: 9%;
+      text-align: left;
+    padding-left: 9%;
+}
+
+.blog-par p{
+
+ font-size: 15px;
+ padding-top: 2%;
+text-align: left;
+padding-left: 9%;
+}
+
+
+.review a{
+
+  text-decoration: none;
+  float: right;
+   color: #161616;
+  padding-right: 10%;
+  padding-top: 4%;
+  transition: all ease .5s;
+}
+
+.review span{
+  padding-left: 10%;
+  color: #161616;
+  padding-top: 4%;
+display: inline-block;
+
+}
+
+
+
+.blog-btn .btn{
+ margin-top: 5%;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #87c232;
+ 
+  background-color: transparent;
+  transition: all ease 1.5s;
+}
+
+.blog-box:hover .blog-btn .btn{
+
+  transition: all ease 1.5s;
+  background-color: #87c232;
+  color: #fff;
+
+}
+
+
+
+/*
+---------------
+banner box css
+-------------------
+
+*/
+
+.banner{
+  background-color: #87c232;
+  margin-bottom: 2%;
+  
+}
+
+.banner-detail h4{
+  font-family: 'Lora', serif;
+    color: #1d1d1d;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.banner-box{
+
+
+  padding-top: 4%;
+  padding-bottom: 3%;
+  letter-spacing: 1px;
+
+}
+
+.banner-detail span{
+  color: #fff;
+
+
+}
+
+.banner-btn .btn{
+
+
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #fff;
+ 
+  background-color: transparent;
+  transition: all ease 1.5s;
+}
+
+.banner-btn .btn:hover{
+  transition: all ease 1.5s;
+  background-color: #fff;
+  color: #87c232;
+
+}
+
+/*
+=================
+gallery img
+===============
+*/
+
+.gallery{
+
+  margin-bottom: 2%;
+}
+
+.gallery-img .col-md-4{
+
+margin: 0;
+padding: 0;
+}
+
+.img-1{
+
+  filter: grayscale(100%);
+  transition: all ease 1s;
+}
+
+.img-1:hover{
+
+  filter: grayscale(0%);
+  transition: all ease 1s;
+}
+
+/*
+==============
+sponser css
+===============
+
+*/
+
+.sponser{
+
+  background-color: #f1f1f1;
+  padding-top: 4%;
+  padding-bottom: 3%;
+  margin-bottom: 2%;
+}
+
+.sponser-img img{
+
+  margin-bottom: 2%;
+
+}
+
+/*
+===================
+contact
+=================
+*/
+
+.contact-about h5{
+  font-size: 20px;
+  text-transform: capitalize;
+  padding-bottom: 4%;
+}
+
+.contact-about h5 span{
+
+  color: #87c232;
+}
+
+.contact-form {
+    position: relative;
+}
+
+.contact-form .btn{
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all ease .5s;
+  border: 1px solid #87c232;
+  background-color: transparent;
+}
+
+.contact-form .btn:hover{
+transition: all ease .5s;
+background-color: #87c232;
+
+}
+
+.form-control {
+
+    border: 1px solid #87c232;
+  }
+
+.form-control:focus {
+   
+
+     border-color: #87c232;
+ 
+   box-shadow: none; 
+}
+
+.contact-icon .icon-1 i{
+
+  background-color: #f1f1f1;
+  padding: 10px;
+  transition: all ease .5s;
+}
+
+
+.contact-icon .icon-1 i:hover{
+ transition: all ease .5s;
+  background-color: #87c232;
+  color: #fff;
+
+}
+
+.contact-icon .icon-1{
+
+  display: inline;
+  padding-right:  5%;
+  
+}
+
+.news h5{
+  font-size: 20px;
+  text-transform: capitalize;
+  padding-bottom: 4%;
+
+}
+
+.news h5 span{
+color: #87c232;
+
+}
+
+.news-img ul{
+ padding-left: 0;
+  margin-left: 0;
+
+}
+
+.news-img ul li{
+
+  list-style: none;
+ 
+}
+
+.news-img ul li .news-des{
+
+  font-size: 15px;
+
+   font-family: 'Lora', serif;
+}
+
+
+.news-img ul li .news-img-1 i{
+  background-color: #f1f1f1;
+  padding: 10px;
+  transition: all ease .5s;
+}
+
+
+.news-img ul li .news-img-1 i:hover{
+ transition: all ease .5s;
+  background-color: #87c232;
+  color: #fff;
+
+}
+
+
+.get-in-touch ul{
+
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.get-in-touch ul li{
+
+  list-style: none;
+}
+
+.get-in-touch ul li .phone-icon{
+
+  float: left;
+      padding-right: 7px;
+}
+
+.get-in-touch ul li .phone-icon i{
+padding: 10px;
+background-color: #f1f1f1f1;
+transition: all ease .5s;
+
+}
+
+.address-des h5{
+
+  padding-bottom: 4%;
+}
+
+.address-des h5 span{
+color: #87c232;
+
+}
+
+
+.get-in-touch ul li .phone-icon i:hover{
+
+ transition: all ease .5s;
+  background-color: #87c232;
+  color: #fff;
+
+}
+
+.map h5{
+  font-size: 20px;
+  text-transform: capitalize;
+  padding-bottom: 4%;
+
+}
+
+.map h5 span{
+
+  color: #87c232;
+
+}
+
+.get-in-touch ul li .phone-info p{
+
+  font-size: 15px;
+} 
+
+
+
+
+
+/*
+=================
+media query
+===================
+*/
+
+
+/*for mobile*/
+
+@media screen and (max-width:575px){
+
+
+.text h1 {
+    font-size: 30px;
+  }
+   
+
+img.bg-img {
+    height: 500px;
+}
+
+.text p {
+    
+    font-size: 13px;
+    font-weight: normal;
+    
+    
+}
+
+.carousel-caption {
+  
+    top: 18%;
+}
+
+
+
+
+
+
+}
+
+/*for tablet*/
+
+@media (min-width: 576px) and (max-width:768px){
+
+}
+
+/*for dextop*/
+
+@media (min-width: 768px) and (max-width:992px){
+
+}
+
+/*for large device*/
+
+@media (min-width: 992px) and (max-width:1200px){
+
+}
